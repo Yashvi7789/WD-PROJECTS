@@ -3,47 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACT_US</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="STYLEforCONTACTus.css"/>
 </head>
 <body>
-    <nav>
-    <ul>
-        <Li><a href="home.html">Home</a></Li>
-        <Li><a href="culture.html">Culture</a></Li>
-        <Li><a href="landmark.html">Landmark</a></Li>
-        <Li><a href="cuisine.html">Cuisine</a></Li>
-        <Li><a href="contact_us.html">Contact Us</a></Li>
-    </ul>
+  <header>
+    <div>
+    <nav class="header" >
+        <div><a href="home.html">Home</a></div>
+        <div><a href="culture.html">Culture</a></div>
+        <div><a href="landmark.html">Landmark</a></div>
+        <div><a href="cuisine.html">Cuisine</a></div>
+        <div><a href="contact_us.html">Contact Us</a></div>
     </nav>
-     
-     <h2>Contact Us</h2>
-     <section id="about contact"></section>
-     <p>Please fill out the form below for any inquiries or to register as a student.</p>
+  </div>
+  </header>
+  
+  <main>
+    <div class="Heading"><h1>Contact Us</h1></div>
+    <div class="para"> <p style="text-transform: capitalize;">Please fill out the form below for any inquiries or to register as a student.</p> </div>
 
-     <form action="" method="" >
-          <caption> <h3>Student Registration Form</h3></caption>
-
-            <label for="name" >First Name:</label>
+    <div>
+     <form>
+        <div><caption> <h3 class="formhead">Student Registration Form</h3></caption></div> 
+          <div class="form"> 
+           <div>
+            <label for="name" >First Name&nbsp;:</label>&nbsp;
             <input type="text" id="firstname" name="fname" placeholder="Enter your first name">
             <br><br>
-          
-            <label for="password">Password:</label>
+           </div>
+
+           <div>
+            <label for="password">Password&nbsp;:</label>&nbsp;
             <input type="password" id="password" name="pname">
             <br><br>
-          
-            <label for="gender">Gender:</label>
+           </div>
+
+           <div>
+            <label for="gender">Gender&nbsp;:</label>&nbsp;
             <input type="radio" id="male" name="gender" value="male">Male
             <input type="radio" id="female" name="gender" value="female">Female
             <br><br>
-
+           </div>
         
-            <label for="subscribe">Subscribe to Newsletter:</label>
+           <div>
+            <label for="subscribe">Subscribe to Newsletter&nbsp;:</label>&nbsp;
             <input type="checkbox" id="subscribe" name="subscribe">
             <br><br>
-        
-            <label for="state">State:</label>
+           </div>
+
+           <div>
+            <label for="state">State&nbsp;:</label>&nbsp;
              <select id="experience" name="experience" size="1">
-                <option value="select your state ">select your state</option>
+               <option value="select your state ">select your state</option>
                <option value="Rajkot">Rajkot</option>
                <option value="Surat">Surat</option>
                <option value="Ahmedabad">Ahmedabad</option>
@@ -51,41 +69,59 @@
                <option value="Jamnagar">Jamnagar</option>
                </select>
                <br><br>
-  
-            <label for="file">Upload Resume:</label>       
-            <input type="file" id="resume" name="resume">
-            <br><br>
-          
-              <label for="address">Address:</label>
+           </div>
+
+           <div>
+              <label for="file">Upload Resume&nbsp;:</label>&nbsp;       
+              <input type="file" id="resume" name="resume">
+              <br><br>
+           </div>
+
+           <div>
+              <label for="address">Address&nbsp;:</label>&nbsp;
               <textarea name="address" id="address" cols="40" rows="2" width="5" placeholder="Enter your full address"></textarea> 
               <br><br>
-          
-            <label for="DOB">Date Of Birth:</label>
+           </div>
+
+           <div>
+                <label for="DOB">Date Of Birth&nbsp;:</label>&nbsp;
                 <input type="date" id="dateofbirth" name="dob"> 
                 <br><br>
-        
-          <label for="time">Preferred Interview Time:</label>
-          <input type="time" id="time" name="time">
-          <br><br>
-       
-          <label for="Marks">Marks:</label>
-            <input type="text" id="marks" name="Marks">
-            <br><br>
-    
-              <input type="submit" name="submit" value="submit">
-              <input type="reset" name="reset" value="reset"> 
-              </form>
+           </div>
 
-              <h3>More Information</h3>
-              <p>Explore government job opportunities on the official OJAS website:</p>
+           <div>
+               <label for="time">Preferred Interview Time&nbsp;:</label>&nbsp;
+               <input type="time" id="time" name="time">
+               <br><br>
+           </div>
+
+           <div>
+              <label for="Marks">Marks&nbsp;:</label>&nbsp;
+              <input type="text" id="marks" name="Marks">
+              <br><br>
+          </div>
+
+          <div>
+              <input class="botton" type="submit" name="submit" value="Submit" style="color: black; margin-right: 90px;">
+              <input class="botton"  type="reset" name="reset" value="Reset" style="color: black;"> 
+          </div>
+      </form>
+          
+    </div> 
+    
+            <div class="Heading" style="margin-top: 100px;"><h2>More Information</h2></div> 
+              <p style="text-transform: capitalize;">Explore government job opportunities on the official OJAS website:</p>
               <iframe src="https://ojas.gujarat.gov.in/" frameborder="350" width="350"></iframe>
               </section><br><br>
+  </main>
+
+  <footer>
               <a href="Home.html">&larr;Back to Home</a>
                  <p>Contact us at <a href="info@incredibleindia.com">info@incredibleindia.com</a></p>
-                            <footer>
+                            <footer align="center">
                                 <p>&copy; 2025 Incredible India Project.</p>
                             </footer>
-              </article>
-
+              
+  </footer>
 </body>
 </html>

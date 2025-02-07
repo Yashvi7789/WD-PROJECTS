@@ -1,0 +1,88 @@
+*{
+    font-family:"JOST";
+    color: #e1eae1;
+}
+
+body{
+    background: #E8CBC0;  
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+    background: linear-gradient(to right, #636FA4, #E8CBC0);
+    letter-spacing: 2.5px;
+}
+
+.header{
+    width: 100%;
+    padding-left: 650px;
+    text-align: center;
+    display: flex; 
+    background-color: #9397a6;
+}
+
+
+.header div { 
+    font-size: 20px;
+    padding: 10px 50px 10px 50px; /* top, right, bottom, left */
+}
+
+a:hover{
+    color: #7a81a0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Heading{
+    text-align: center;
+}
+
+.para{
+    font-size: 15px;
+}
+
+.formhead{
+    font-size: 35px;
+    text-align: center;
+}
+
+.formhead:hover{
+    color: #636FA4;
+}
+
+.form{
+   color: #151616;
+   margin-left: 400px;
+   margin-right: 400px;
+   border: 3px solid  #131416;
+   padding-left: 27%;
+   font-weight: 900;
+   font-size: 20px;
+   border-radius: 60px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: rgb(153, 180, 202);
+}
+
+.addspace{
+    margin-left: 40px;
+}
+
+.form-container div {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.botton{
+    background-color: rgba(199, 202, 191, 0.6);
+    height: 50PX;
+    border-radius: 23px; 
+    color: rgba(19, 19, 17); 
+    font-weight: 900; 
+    letter-spacing: 1px;
+}
+
+.botton:hover{
+    background-color: #636FA4;
+}
+  
+
