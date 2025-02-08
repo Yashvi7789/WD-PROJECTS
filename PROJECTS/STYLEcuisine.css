@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JOST";
+    color:azure;
+}
+
+
+
+body{
+    background-color: black;
+/* background: #2C3E50;  
+background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  
+background: linear-gradient(to right, #FD746C, #2C3E50);  */
+}
+
+.header{
+    padding-left: 650px;
+    text-align: center;
+    display: flex; 
+    background-color: #aa97fd;
+}
+
+
+.header div { 
+    font-size: 20px;
+    padding: 10px 50px 10px 50px; /* top, right, bottom, left */
+}
+
+a:hover{
+    color: #5571ee;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Heading{
+    font-size: 30px;
+    text-align: center;
+}
+
+.para{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.foodinfo{
+    letter-spacing: 1.7px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
