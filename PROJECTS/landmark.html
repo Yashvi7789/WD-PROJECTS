@@ -4,42 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LANDMAEK</title>
+    <link rel="stylesheet" type="text/css" href="STYLElandmark.css"/>
 </head>
 <body>
-    <nav>
-    <ul>
-        <Li><a href="home.html">Home</a></Li>
-        <Li><a href="culture.html">Culture</a></Li>
-        <Li><a href="landmark.html">Landmark</a></Li>
-        <Li><a href="cuisine.html">Cuisine</a></Li>
-        <Li><a href="contact_us.html">Contact Us</a></Li>
-    </ul>
-    </nav>
-
-    <h2>Famous Landmarks in India</h2>
-    <strong><p>Explore the iconic landmarks that define the heritage and history of India.</p></strong>
-
-    <h2>Iconic Monuments</h2>
+    <header>
+        <div>
+        <nav class="header">
+            <div><a href="home.html">Home</a></div>
+            <div><a href="culture.html">Culture</a></div>
+            <div><a href="landmark.html">Landmark</a></div>
+            <div><a href="cuisine.html">Cuisine</a></div>
+            <div><a href="contact_us.html">Contact Us</a></div>
+        </nav>
+      </div>
+    </header>
     
+<main>
+   <div>
+    <div class="landmark">
+        <div id="landmarkLeft">
+          <div class="Heading"><h2>Famous Landmarks in India</h2></div>
+          <div class="para"><p>Explore the iconic landmarks that define the heritage and history of India.</p></div>
+        </div>
+        <div >
+            <image src="../IMAGES/landmark.png" class="landmarkimage"></image>
+        </div>
+    </div>
+
+    <div style="margin-top: 100px;">
+    <div class="Heading"><h2>Iconic Monuments</h2></div>
+    <div class="para">
     <p>India is home to some of the most awe-inspiring landmarks in the world.These monuments reflect its rich cultural heritage
     and historical significance:</p>
+    </div>
+    <div>
+        <div><image src="../IMAGES/tajmahal.jpg" class="imageleft"></image></div>
+        <div class="textright"><b>Taj Mahal:</b> Located in Agra, this symbol of eternal love is one of the Seven Wonders of the World.</div>
 
-    <ul>
-        <Li><b>Taj Mahal:</b> Located in Agra, this symbol of eternal love is one of the <mark>Seven Wonders of the World</mark>.</Li>
-        <Li><b>Red Fort:</b> A UNESCO World Heritage Site in Delhi, showcasting Mughal architecture.</Li>
-        <Li><b>Hawa Mahal:</b> Known as the <q>Palace of Wings,</q> this Jaipur marvel is famous for its intricate latticework.</Li>
-        <li><b>Charminar:</b> An iconic mosque in Hyderabad and a masterpiece of Indo-Islamic architecture.</li>
-        </ul>
+        <div class="textleft"><b>Red Fort:</b> A UNESCO World Heritage Site in Delhi, showcasting Mughal architecture.</div>
+        <div><image src="../IMAGES/redfort.jpg" class="imageright"></image></div>
 
-           <blockquote><image src="../IMAGES/redfort.jpg" width="500px"></image><br>
-            The majestic Red Fort in Delhi
-           </blockquote>
+        <div><image src="../IMAGES/hawamahal.jpg" class="imageleft"></image></div>
+        <div class="textright"><b>Hawa Mahal:</b>Known as the <q>Palace of Wings,</q> this Jaipur marvel is famous for its intricate latticework.</div>
+    
+        <div class="textleft"><b>Charminar:</b> An iconic mosque in Hyderabad and a masterpiece of Indo-Islamic architecture.</div>
+        <div><image src="../IMAGES/charminar.jpg" class="imageright"></image></div>
+     </div>     
+    </div>
 
-        <h2>Indian States and Capitals</h2>
-        <p>India is a union of states, each with unique cultural and geographical identity. Here's a detailed
+    <div style="clear: both;">
+       <div class="Heading"><h2>Indian States and Capitals</h2></div> 
+       <div class="para"><p>India is a union of states, each with unique cultural and geographical identity. Here's a detailed
         table listing some Indian states, their capitals, and key data:</p>
+       </div> 
+    </div>
 
-        <table border="1" cellpadding="9" cellspacing="0" width=100%>
+    <div class="tableborder">
+        <table border="1" cellpadding="6" cellspacing="0" class="style-table">
                         <caption><b>List of Indian States</b></caption>
                         <thead>
                         <tr>
@@ -81,25 +102,30 @@
                             <td colspan="5">Note:Data is indicative and may not represent official values.</td>
                         </tr>
                     </table>
+    </div>
 
-                    <h2>Fun Fact</h2>
-                    <p>Did you know? India has largest postal network in the world, with over 1,50,000 post office,
-                    including one located structure in Dal Lake, Srinagar.</p>
+    <div>          
+       <div><h2>Fun Fact :</h2></div>
+       <div class="para">
+        <p>Did you know? India has largest postal network in the world, with over 1,50,000 post office,
+        including one located structure in Dal Lake, Srinagar.</p>
+       </div> 
+   
+       <div><image src="../IMAGES/dallake.jpg" class="imageleft" style="margin-left: 200px;"></image></div>
+       <div class="textright" style="margin-left: 300px;">The floating post office in Dal Lake, Srinagar</div>
+                
+    </div> 
 
+   </div>        
+</main>
 
-
-                    <blockquote><image src="../IMAGES/dal_lake.jpg" width="500px"></image><br>
-                     The floating post office in Dal Lake, Srinagar
-                    </blockquote>
-
-            
-
+        <footer style="clear: both;">
             <a href="Home.html">&larr;Back to Home</a>
 
             <p><i>Contact us at <a href="info@incredibleindia.com">info@incredibleindia.com</a></i></p>
-                 <footer>
+                            <footer class="Heading">
                                 &copy; 2025 Incredible India Project
                             </footer>
-
+        </footer>
    </body>
    </html>

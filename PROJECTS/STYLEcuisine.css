@@ -95,6 +95,7 @@ a{
 .image{
    height: 350px;
    border-radius: 40px;
+   box-shadow: 0px 0px 10px 5px rgb(241, 241, 247);
 
 }
 
@@ -102,7 +103,7 @@ a{
     width: 250px ;
     height: 350px;
     border-radius: 40px;
- 
+    box-shadow: 0px 0px 10px 5px rgb(241, 241, 247);
  }
  
 

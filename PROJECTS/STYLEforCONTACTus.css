@@ -18,7 +18,8 @@ body{
     padding-left: 330px;
     text-align: center;
     display: flex; 
-    background-color: #9397a6;
+    background-color: #202843;
+    letter-spacing: 2px;
     text-shadow: 2px 2px 5px #000;
 }
 
@@ -28,22 +29,24 @@ body{
     padding: 10px 50px 10px 50px; /* top, right, bottom, left */
 }
 
-section {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
-      ),
-      url("../IMAGES/contactus.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
-}
+.contact{
+    background: none;
+    background-color: rgba(17, 17, 17, 0.3);
+    padding: 10px 30px 30px 30px;
+ }
 
+ #contactLeft{
+        text-align: center;
+        float: left;
+        margin-top: 300px;
+        text-shadow: 2px 2px 5px #000;
+ }
+
+.contactimage{
+    margin-left: 200px;
+    height: 100vh;
+    width: 500px;
+}
 
 a:hover{
     color: #7a81a0;
@@ -62,6 +65,9 @@ a{
 
 .para{
     font-size: 15px;
+    margin-left: 50px;
+    text-shadow: 2px 2px 5px #000;
+    text-transform: capitalize;
 }
 
 .formhead{
@@ -88,7 +94,7 @@ a{
    padding-top: 20px;
    padding-bottom: 20px;
    background-color: rgb(153, 180, 202);
-   box-shadow: 10px 10px 10px rgba(2, 2, 19, 0.3);
+   box-shadow: 0px 0px 10px 5px rgba(2, 2, 19, 0.7);
 }
 
 input[type="text"],input[type="password"],input[type="time"], input[type="date"], textarea,select  {
@@ -138,10 +144,9 @@ select option {
  
 .iframe-style {
     margin-left: 150px;
-    border: 2px solid black;
     border-radius: 10px;
     width: 80%;
     height: 500px;
-    box-shadow: 10px 10px 10px rgba(2, 2, 19, 0.3);
+    box-shadow: 0px 0px 10px 5px rgba(2, 2, 19, 0.8);
 }
 

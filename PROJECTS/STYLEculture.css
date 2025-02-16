@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JOST";
+    color:azure;
+}
+
+body{
+    background: #C6FFDD;  
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);    
+    letter-spacing: 2.5px;
+}
+
+.header{
+    padding-left: 330px;
+    text-align: center;
+    display: flex; 
+    background-color: #270e3c;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.header div { 
+    font-size: 20px;
+    padding: 10px 50px 10px 50px; /* top, right, bottom, left */
+}
+
+a:hover{
+    color: #5571ee;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Heading{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+h2:hover{
+    color: #636FA4;
+}
+
+.para{
+    font-size: 25px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px #1a0202;
+    margin-bottom: 100px;
+}
+
+.culture{
+   background: none;
+   background-color: rgba(251, 249, 249, 0.5);
+   padding: 10px 30px 30px 30px;
+}
+
+#cultureLeft{
+    text-align: center;
+    float: left;
+    margin-top: 300px;
+}
+
+.familyimg{
+    margin-left: 60px;
+    height: 100vh;
+    width: 400px;
+}
+
+.festival{
+    clear: both;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.images{
+   float: left;
+   height: 250px;
+   border-radius: 20%;
+   margin-left: 170px;
+   box-shadow: 0px 0px 10px 5px rgba(2, 2, 19, 0.7);
+   margin-bottom: 150px;
+
+}
+
+.setimage{
+    position: relative;
+}
+
+.textforimage{
+    background: none;
+    background-color: rgb(244, 241, 238,0.3);
+    border-radius: 15%;
+    padding: 50px 50px 50px 50px;
+    margin-top: 50px;
+    float: left;
+    margin-left: 150px;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px #1a0202;
+    box-shadow: 0px 0px 10px 5px rgba(7, 7, 7, 0.8);
+}
+
+.tableborder{
+    width: fit-content;
+    margin: 70px 50px 100px 150px; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0px 0px 10px 5px rgb(241, 241, 247);
+}
+
+.style-table {
+    border: 1px solid #0f0f0f;
+    width: 800px;
+    border-collapse: collapse;
+    margin: 50px 200px 50px 200px ;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 5px rgba(254, 253, 253, 1);
+}
+
+.style-table caption {
+    font-size: 24px;
+    margin-left: 70px;
+    margin-bottom: 22px;
+    text-align: center;
+    width: 700px;
+}
+
+.style-table th, .style-table td {
+    padding: 12px;
+    height: 80px;
+    width: 400px;
+}
+
+.style-table th {
+    background-color: #0f0f0f;
+    color: #f7f1f1;
+   
+}
+
+.style-table tr {
+    background-color: #0f0f0f;
+   
+}
+
+.style-table tr:hover {
+    background-color: #ce8ff3;
+   
+}
