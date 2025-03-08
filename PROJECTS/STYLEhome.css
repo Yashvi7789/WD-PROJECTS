@@ -20,7 +20,23 @@ body{
     background-color: #392b01;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px #000;
+    animation: navbar 1.7s ease-out forwards;
 }
+
+@keyframes navbar {
+    from {
+      top: -100px;
+      opacity: 0.3;
+      width: 200px;
+      padding: 0;
+      display: inline-flex;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+      width: 100%;
+    }
+  }
 
 .header div { 
     font-size: 20px;
@@ -68,6 +84,7 @@ h2:hover{
      float: left;
      margin-top: 300px;
      letter-spacing: 2px;
+     animation: slideInRight 3s forwards;
 }
 
 .indiaLeft2{
@@ -88,8 +105,32 @@ h2:hover{
      margin-left: 200px;
      height: 100vh;
      width: 400px;
-     
+     filter: drop-shadow(0px 0px 9px white);
+     animation: slideInLeft 3s forwards;
 }
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%) scale(0.3);
+      opacity: 0.3;
+    }
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%) scale(0.3);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
 
 .map{
     margin-left: 60px;
@@ -119,6 +160,17 @@ h2:hover{
     letter-spacing: 2px;
     text-transform: capitalize;
     text-shadow: 2px 2px 5px #1a0202;
+}
+
+.textinfo{
+    font-size: 39px;
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px #1a0202;
+
 }
 
 .tajmahal{
@@ -160,6 +212,36 @@ h2:hover{
     text-shadow: 2px 2px 5px #1a0202;
 }
 
+.textright1{
+    float: left;
+    margin-top: 150px;
+    margin-left: 300px;
+    font-size: 25px;
+    background: none;
+    background-color: rgb(244, 241, 238,0.2);
+    border-radius: 50px;
+    padding: 50px 50px 50px 50px;
+    margin-bottom: 130px;
+    box-shadow: 0px 0px 10px 5px rgba(7, 7, 7, 0.8);
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px #1a0202;
+}
+
+.textleft1{
+    float: left; 
+    margin-left: 150px;
+    margin-top: 150px;
+    font-size: 25px;
+    background: none;
+    background-color: rgb(244, 241, 238,0.2);
+    border-radius: 50px;
+    padding: 50px 50px 50px 50px;
+    margin-bottom: 180px;
+    box-shadow: 0px 0px 10px 5px rgba(7, 7, 7, 0.8);
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px #1a0202;
+}
+
 .qutubminar{
     margin-top: 50px;
     width: 500px;
@@ -181,4 +263,73 @@ h2:hover{
     box-shadow: 0px 0px 10px 5px rgba(243, 243, 246, 0.8);
     text-shadow: 2px 2px 5px #1a0202;
     margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 780px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "JOST";
+        color: azure;
+    }
+
+    
+    body {
+        letter-spacing: 1.5px;
+    }
+
+    .header {
+        padding-left: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header div {
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+
+    .Heading,.textinfo {
+        margin-left: 20px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .para {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .india, .indiaLeft2, .textright, .textleft, .textright1, .textleft1 {
+        float: none;
+        margin: 10px auto;
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #indiaLeft {
+        margin-left: 0;
+        text-align: center;
+        float: none;
+        margin-top: 150px;
+    }
+
+    .modi, .map, .tajmahal, .qutubminar, .dance {
+        float: none;
+        height: auto;
+        width: 90%;
+        height: 300px;
+        margin: 20px 30px;
+        border-radius: 20px;
+    }
+
+    .lines, .text {
+        font-size: 16px;
+        text-align: center;
+        margin: 10px auto;
+        letter-spacing: 1px;
+    }
 }

@@ -15,12 +15,14 @@ body{
 }
 
 .header{
-    padding-left: 330px;
+    padding-left: 350px;
     text-align: center;
     display: flex; 
     background-color: #202843;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px #000;
+    position: relative;
+    animation: navbar 1.7s ease-out forwards;
 }
 
 
@@ -40,13 +42,39 @@ body{
         float: left;
         margin-top: 300px;
         text-shadow: 2px 2px 5px #000;
+        animation: slideInRight 3s forwards;
  }
 
 .contactimage{
     margin-left: 200px;
     height: 100vh;
     width: 500px;
+    animation: slideInLeft 3s forwards;
+    filter: drop-shadow(0 0 18px black);
 }
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%) scale(0.3);
+      opacity: 0.3;
+    }
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%) scale(0.3);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
 
 a:hover{
     color: #7a81a0;
@@ -54,6 +82,7 @@ a:hover{
 
 a{
     text-decoration: none;
+    color: #e1eae1;
 }
 
 .Heading{
@@ -61,6 +90,9 @@ a{
     margin-top: 40px;
     margin-bottom: 40px;
     text-shadow: 2px 2px 5px #000;
+}
+.Heading:hover{
+   color: #636FA4;
 }
 
 .para{
@@ -70,77 +102,89 @@ a{
     text-transform: capitalize;
 }
 
-.formhead{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 5px #000;
-}
-
-.formhead:hover{
-    color: #636FA4;
-}
-
-.form{
-   color: #151616;
-   margin-left: 400px ;
-   margin-right: 400px ;
-   border: 3px solid  #020a1b;
-   padding-left: 13%;
-   font-weight: 900;
-   font-size: 20px;
-   border-radius: 60px;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   background-color: rgb(153, 180, 202);
-   box-shadow: 0px 0px 10px 5px rgba(2, 2, 19, 0.7);
-}
-
-input[type="text"],input[type="password"],input[type="time"], input[type="date"], textarea,select  {
-    color: black; 
-    background-color: white; 
-    font-family: "JOST"; 
-    padding: 5px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+@keyframes navbar {
+    from {
+      top: -100px;
+      opacity: 0.3;
+      width: 200px;
+      padding: 0;
+      display: inline-flex;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+      width: 100%;
+    }
+  }
   
-}
+ 
+ 
+.form-anim {
+    animation: fadeIn 1.2s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .form-card {
+    animation: zoomIn 1s ease-out forwards;
+  }
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.85);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  .input-anim {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .input-anim:hover,
+  .input-anim:focus {
+    background-color: #f1f1f1;
+    border-color: #636FA4;
+  }
+  
+  
+  .btn-custom {
+    background-color: rgba(199, 202, 191, 0.6);
+    border: none;
+    border-radius: 23px;
+    font-weight: 900;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .btn-custom:hover {
+    background-color: #636FA4;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Enhance form labels */
+  .form-label,.form-check-label {
+    color: #000;
+    font-weight: 900;
+  }
 
-input[type="password"]::placeholder,input[type="text"]::placeholder,input[type="date"]::placeholder,textarea::placeholder{
-    color: rgb(8, 7, 33);
-    text-transform: capitalize; 
-}
-
-select option {
+  select option {
     color: rgb(26, 26, 62); 
     background-color: white; 
 }
+  
 
-
-.addspace{
-    margin-left: 40px;
-}
-
-.form-container div {
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.botton{
-    background-color: rgba(199, 202, 191, 0.6);
-    height: 50PX;
-    width: 90px;
-    border-radius: 23px; 
-    color: rgba(19, 19, 17); 
-    font-weight: 900; 
-    letter-spacing: 1px;
-    padding: 10px 10px 10px 10px ;/* top, right, bottom, left */
-}
-
-.botton:hover{
-    background-color: #636FA4;
-}
  
 .iframe-style {
     margin-left: 150px;
@@ -148,5 +192,156 @@ select option {
     width: 80%;
     height: 500px;
     box-shadow: 0px 0px 10px 5px rgba(2, 2, 19, 0.8);
+}
+
+footer {
+  background-color: #202843;
+  color: #e1eae1;
+  text-shadow: 2px 2px 5px #000;
+  padding: 20px 10px;
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 780px) {
+ 
+  .header {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header div {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+ 
+  
+  .contact {
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  #contactLeft {
+    float: none;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .contactimage {
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+    float: none;
+  }
+ 
+  
+  .Heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .para {
+    margin-left: 0;
+    padding: 0 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  
+  .iframe-style {
+    margin-left: 0;
+    width: 100%;
+    height: 400px;
+  }
+ 
+  
+  footer {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+ 
+  .header {
+    padding-left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header div a:hover {
+    background-color: #7a81a0; 
+    color: #ffffff;           
+    transform: scale(1.05);    
+  }
+
+  .header div {
+    padding: 10px 20px; 
+    font-size: 16px;   
+  }
+
+  
+  .contact {
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #contactLeft {
+    margin: 20px auto;
+    float: none;        
+    margin-top: 20px;     
+    text-align: center;
+  }
+
+  .contactimage {
+    margin: 20px auto;
+    width: 90%;          
+    height: auto;        
+    float: none;
+  }
+
+  .Heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .para {
+    margin-left: 0;
+    padding: 0 10px;     
+    font-size: 14px;
+  }
+
+  .iframe-style {
+    margin-left: 0;
+    width: 100%;
+    height: 300px;
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer a,
+  footer p {
+    font-size: 14px;
+  }
 }
 

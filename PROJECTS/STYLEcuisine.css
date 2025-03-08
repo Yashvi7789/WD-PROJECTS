@@ -26,9 +26,6 @@ section {
 
 body{
     background-color: rgb(0, 0, 0);
-/* background: #2C3E50;  
-background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  
-background: linear-gradient(to right, #FD746C, #2C3E50);  */
 }
 
 .header{
@@ -38,8 +35,23 @@ background: linear-gradient(to right, #FD746C, #2C3E50);  */
     background-color: #7a5ef8;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px #000;
+    animation: navbar 1.7s ease-out forwards;
 }
 
+@keyframes navbar {
+  from {
+    top: -100px;
+    opacity: 0.3;
+    width: 200px;
+    padding: 0;
+    display: inline-flex;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+    width: 100%;
+  }
+}
 
 .header div { 
     font-size: 20px;
@@ -52,75 +64,128 @@ a:hover{
 
 a{
     text-decoration: none;
+    color: #dde1f3;
 }
 
-.Heading{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 140px;
-    text-shadow: 2px 2px 5px #000;
-}
+.Heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(249, 243, 243);
+    margin-bottom: 16px;
+  }
 
-.parabg{
-    font-size: 25px;
-    text-transform: capitalize;
-    text-shadow: 2px 2px 5px #1a0202;
-}
+.para {
+    font-size: 19.2px; 
+    color: lightgray;
+    margin-bottom: 32px; 
+  }
 
-.para{
-    font-size: 25px;
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 50px;
-}
 
-.foodinfo{
-    letter-spacing: 1.7px;
-    font-size: 20px;
-    text-transform: capitalize;
-}
+.card-img-fixed {
+    height: 270px;
+    border-radius: 40px 40px 0px 0px;
+    object-fit: cover;
+  }
 
-.northsection{
-   background-attachment: fixed;
-}
-
-.image-container {
-    margin-left: 200px;
-    position: relative;
-    width: fit-content;
-    float: left;
-}
-
-.image{
-   height: 350px;
-   border-radius: 40px;
-   box-shadow: 0px 0px 10px 5px rgb(241, 241, 247);
-
-}
-
-.imagebutterc{
-    width: 250px ;
-    height: 350px;
+.card-custom {
+    height: 100%;
     border-radius: 40px;
     box-shadow: 0px 0px 10px 5px rgb(241, 241, 247);
- }
- 
+    margin-right: 50px;
+    margin-top: 60px;
+  }
 
-
-
-.centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 24px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-    letter-spacing: 1.5px;
+.card-title{
+   font-weight: 800;
+   font-size: 25px;
 }
+.card-text{
+      height: 40px;
+      padding-top: 15px;
+      color: #000;
+      text-transform: capitalize;
+  }
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #202843;
+    color: #f1f5f1;
+    text-shadow: 2px 2px 5px #000;
+    animation: slideUp 1s ease-out forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 
-.nextsection{
-    clear: both;
-}
+  @media screen and (max-width: 780px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "JOST";
+      color: azure;
+    }
+  
+    body {
+      background-color: rgb(0, 0, 0);
+    }
+  
+    section {
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+      background-size: cover;
+      background-attachment: scroll;
+    }
+  
+    .header {
+      padding-left: 0;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .header div {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  
+    .Heading {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+  
+    .para {
+      font-size: 16px;
+      text-align: center;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+  
+    .card-img-fixed {
+      height: 200px;
+    }
+  
+    
+    .card-custom,.formedia{
+      margin: 30px auto;
+    }
+  
+    footer {
+      padding: 15px 10px;
+      text-align: center;
+    }
+  }
+  
