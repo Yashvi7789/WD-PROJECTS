@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LANDMARK</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+ 
+  <link rel="stylesheet" type="text/css" href="STYLElandmark.css" />
+  
+  <style>
+    .card {
+      border-radius: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .fixed-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 30px 0px 0px 30px; 
+    }
+
+    p{
+        text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+ 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+          <div class="container">
+            <a class="navbar-brand" href="home.html">Incredible India</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="homeb.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="cultureb.html">Culture</a></li>
+                <li class="nav-item"><a class="nav-link" href="landmarkb.html">Landmark</a></li>
+                <li class="nav-item"><a class="nav-link" href="cuisineb.html">Cuisine</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactusb.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+  <main class="container my-5">
+ 
+    <h2 class="text-center">Famous Landmarks in India</h2>
+    <p class="text-center">Explore the iconic landmarks that define the heritage and history of India.</p>
+       
+    <section>
+      <h2 class="mb-3 text-center mt-5">Iconic Monuments</h2>
+      <p class="mb-4 text-center">
+        India is home to some of the most awe-inspiring landmarks in the world. These monuments reflect its rich cultural heritage
+        and historical significance:
+      </p>
+
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../IMAGES/tajmahal.jpg" class="img-fluid fixed-img" alt="Taj Mahal">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Taj Mahal</h5>
+              <p class="card-text">Located in Agra, this symbol of eternal love is one of the Seven Wonders of the World.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../IMAGES/redfort.jpg" class="img-fluid fixed-img" alt="Red Fort">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Red Fort</h5>
+              <p class="card-text">A UNESCO World Heritage Site in Delhi, showcasing Mughal architecture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../IMAGES/hawamahal.jpg" class="img-fluid fixed-img" alt="Hawa Mahal">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Hawa Mahal</h5>
+              <p class="card-text">Known as the "Palace of Wings," this Jaipur marvel is famous for its intricate latticework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="card mb-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../IMAGES/charminar.jpg" class="img-fluid fixed-img" alt="Charminar">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Charminar</h5>
+              <p class="card-text">An iconic mosque in Hyderabad and a masterpiece of Indo-Islamic architecture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section class="my-5">
+      <h2 class="mt-6 text-center">Indian States and Capitals</h2>
+      <p class="mt-3 text-center">
+        India is a union of states, each with a unique cultural and geographical identity. Here's a detailed
+        table listing some Indian states, their capitals, and key data:
+      </p>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <caption><b>List of Indian States</b></caption>
+          <thead class="table-light">
+            <tr>
+              <th rowspan="2">State</th>
+              <th rowspan="2">Capital</th>
+              <th colspan="2">Area (in km<sup>2</sup>)</th>
+              <th rowspan="2">Official Language</th>
+            </tr>
+            <tr>
+              <th>Urban</th>
+              <th>Rural</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gujarat</td>
+              <td>Gandhinagar</td>
+              <td>1,764</td>
+              <td>185,933</td>
+              <td>Gujarati</td>
+            </tr>
+            <tr>
+              <td>Maharastra</td>
+              <td>Mumbai</td>
+              <td>307,713</td>
+              <td>70,940</td>
+              <td>Marathi</td>
+            </tr>
+            <tr>
+              <td>Rajasthan</td>
+              <td>Jaipur</td>
+              <td>342,239</td>
+              <td>NA</td>
+              <td>Hindi</td>
+            </tr>
+            <tr>
+              <td colspan="5" class="text-center">Note: Data is indicative and may not represent official values.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="card mb-5">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../IMAGES/dallake.jpg" class="img-fluid fixed-img" alt="Dal Lake">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 class="card-title">Fun Fact</h2>
+            <p class="card-text">
+              Did you know? India has the largest postal network in the world, with over 150,000 post offices,
+              including a uniquely located structure in Dal Lake, Srinagar.
+            </p>
+            <p class="card-text"><small class="text-muted">The floating post office in Dal Lake, Srinagar</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <section class="m-5">
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="card text-center shadow">
+          <div class="card-body">
+            <i class="bi bi-house-fill display-4 text-primary mb-3"></i>
+            <h5 class="card-title">Home</h5>
+            <p class="card-text">Return to our homepage.</p>
+            <a href="home.html" class="btn btn-primary">Go Home</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card text-center shadow">
+          <div class="card-body">
+            <i class="bi bi-envelope-fill display-4 text-secondary mb-3"></i>
+            <h5 class="card-title">Contact Us</h5>
+            <p class="card-text">Reach out via email.</p>
+            <a href="mailto:info@incredibleindia.com" class="btn btn-secondary">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-3">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Incredible India Project</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

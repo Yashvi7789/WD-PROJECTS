@@ -26,6 +26,7 @@ section {
 
 body{
     background-color: rgb(0, 0, 0);
+
 }
 
 .header{
@@ -72,13 +73,23 @@ a{
     font-weight: bold;
     color: rgb(249, 243, 243);
     margin-bottom: 16px;
+    text-shadow: 2px 2px 5px rgba(245, 209, 245, 0.7);
   }
 
 .para {
     font-size: 19.2px; 
     color: lightgray;
-    margin-bottom: 32px; 
+    margin-bottom: 32px;
+   text-shadow: 1px 1px 3px #f8efef;
+
   }
+
+.parabg{
+  font-size: 20px; 
+  color: lightgray;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px #313030;
+}
 
 
 .card-img-fixed {
@@ -98,12 +109,19 @@ a{
 .card-title{
    font-weight: 800;
    font-size: 25px;
+   text-shadow: 1px 1px 3px #000;
 }
 .card-text{
       height: 40px;
       padding-top: 15px;
       color: #000;
       text-transform: capitalize;
+      text-shadow: 1px 1px 2px #000;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
   }
 
 footer {

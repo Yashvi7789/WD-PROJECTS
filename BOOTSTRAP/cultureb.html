@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CULTURE</title>
+  
+  <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"  rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .card {
+      border-radius: 20px;
+    }
+
+    h2,.card-title{
+        text-shadow: 4px 4px 3px  rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .text-muted-custom {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 18px;
+      text-shadow: 4px 4px 3px  rgba(0, 0, 0, 0.2);
+    }
+ 
+    .fixed-img {
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px 0px 0px 20px;
+    }
+  
+    .list-unstyled {
+      list-style: none;
+      padding: 0;
+    }
+
+    p {
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Incredible India</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="homeb.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="cultureb.html">Culture</a></li>
+            <li class="nav-item"><a class="nav-link" href="landmarkb.html">Landmark</a></li>
+            <li class="nav-item"><a class="nav-link" href="cuisineb.html">Cuisine</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactusb.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container py-5">  
+    <h2 class="mb-1 text-center">Indian Culture</h2>
+    <p class="text-center mb-5">Discover the rich and diverse culture of India, a land of unity in diversity.</p>
+        
+    <section class="mb-5">
+      <h2 class="text-center mb-3">Festivals</h2>
+      <p class="text-center">India celebrates a variety of festivals that reflect its rich cultural heritage and religious diversity.</p>
+      
+      <!-- Diwali Card (Image on Left) -->
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="../IMAGES/DIWALI.jpg" alt="Diwali" class="img-fluid fixed-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Diwali</h5>
+              <p class="card-text">
+                <strong class="text-muted-custom">Festival of Lights:</strong> Symbolizing the victory of light over darkness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Holi Card (Modified: Image on Left) -->
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <!-- Removed order-md-2 -->
+          <div class="col-md-4">
+            <img src="../IMAGES/HOLI.jpg" alt="Holi" class="img-fluid fixed-img">
+          </div>
+          <!-- Removed order-md-1 -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Holi</h5>
+              <p class="card-text">
+                <strong class="text-muted-custom">Festival of Colors:</strong> Celebrating love and the arrival of spring.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eid Card (Already Left) -->
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="../IMAGES/EID.jpeg" alt="Eid" class="img-fluid fixed-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Eid</h5>
+              <p class="card-text">
+                <strong class="text-muted-custom">Festival of Harmony:</strong> Marked by prayers, feasts, and charity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Christmas Card (Modified: Image on Left) -->
+      <div class="card mb-5">
+        <div class="row g-0 align-items-center">
+          <!-- Removed order-md-2 -->
+          <div class="col-md-4">
+            <img src="../IMAGES/CHRISTMUS.jpg" alt="Christmas" class="img-fluid fixed-img">
+          </div>
+          <!-- Removed order-md-1 -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Christmas</h5>
+              <p class="card-text">
+                <strong class="text-muted-custom">Festival of Joy:</strong> Celebrating the birth of Jesus Christ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="text-center mb-3">Languages</h2>
+      <p class="text-center">India is a linguistic treasure trove with 22 officially recognized languages and thousands of regional dialects:</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover text-center">
+          <caption class="fw-bold">Popular Languages in India</caption>
+          <thead class="table-light">
+            <tr>
+              <th>Language</th>
+              <th>Region</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hindi</td>
+              <td>North India</td>
+            </tr>
+            <tr>
+              <td>Bengali</td>
+              <td>West Bengal</td>
+            </tr>
+            <tr>
+              <td>Tamil</td>
+              <td>Tamil Nadu</td>
+            </tr>
+            <tr>
+              <td>Telugu</td>
+              <td>Andhra Pradesh</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-center">&#x25BA; Fun Fact</p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="text-center mb-3">Traditional Attire</h2>
+      <p class="text-center">Indian traditional clothing varies by region, showcasing its cultural diversity:</p>
+
+      <!-- Saree Card (Image on Left) -->
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="../IMAGES/saree.jpeg" alt="Saree" class="img-fluid fixed-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">
+                <strong class="text-muted-custom">Saree:</strong> A graceful attire featured in traditional dances such as Bharatanatyam, Kathak, and Odissi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kurta-Pajama Card (Modified: Image on Left) -->
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <!-- Removed order-md-2 -->
+          <div class="col-md-4">
+            <img src="../IMAGES/kurta.jpeg" alt="Kurta-Pajama" class="img-fluid fixed-img">
+          </div>
+          <!-- Removed order-md-1 -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">
+                <strong class="text-muted-custom">Kurta-Pajama:</strong> A traditional attire for men, often paired with instruments such as the sitar, tabla, and veena.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Lehenga Card (Already Left) -->
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="../IMAGES/lehenga.jpeg" alt="Lehenga" class="img-fluid fixed-img">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">
+                <strong class="text-muted-custom">Lehenga:</strong> Worn during festive occasions like Diwali, Holi, Eid, and Christmas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Dhoti Card (Modified: Image on Left) -->
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <!-- Removed order-md-2 -->
+          <div class="col-md-4">
+            <img src="../IMAGES/dhoti.jpeg" alt="Dhoti" class="img-fluid fixed-img">
+          </div>
+          <!-- Removed order-md-1 -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">
+                <strong class="text-muted-custom">Dhoti:</strong> A traditional garment for men in southern and eastern India.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card text-center shadow">
+            <div class="card-body">
+              <i class="bi bi-house-fill display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Home</h5>
+              <p class="card-text">Return to our homepage.</p>
+              <a href="home.html" class="btn btn-primary">Go Home</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-md-6">
+          <div class="card text-center shadow">
+            <div class="card-body">
+              <i class="bi bi-envelope-fill display-4 text-secondary mb-3"></i>
+              <h5 class="card-title">Contact Us</h5>
+              <p class="card-text">Reach out via email.</p>
+              <a href="mailto:info@incredibleindia.com" class="btn btn-secondary">Email Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </div>
+  
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+      &copy; 2025 Incredible India Project
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
